@@ -30,6 +30,5 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Web & Mobile preview
 
-https://ibb.co/3pmWnJQ
-
-https://ibb.co/tQ7ktxp
+![screenshot](https://user-images.githubusercontent.com/52496724/133520025-86ecf9d6-d84e-4a84-bc79-b42c7ababbc2.png)
+![screencapture-localhost-4200-2021-09-16-00_33_04](https://user-images.githubusercontent.com/52496724/133520044-334ed26d-74d0-49a3-8b46-5a3ee078b265.png)
