@@ -1,0 +1,36 @@
+<div class="flex-md-grow-1">
+  <div class="d-flex flex-row">
+    <div class="col" style="padding-right: 15px">
+      <input [(ngModel)]="filterByTitle" class="form-control" placeholder="Type to filter by title . . ."></div>
+    <div class="col">
+      <div class="d-flex flex-row">
+        <input [(ngModel)]="filterByDescription" class="form-control" placeholder="Type to filter by description . . .">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="list-group">
+    <div class="row row-cols-1 row-cols-sm-4 row-cols-md-4 g-3">
+      <div class="col"
+           *ngFor="let item of itemList | paginate: {itemsPerPage: 8, currentPage: p} | itemFilterByTitle: filterByTitle | itemFilterByDescription: filterByDescription;">
+        <div class="card shadow-sm">
+          <img class="bd-placeholder-img card-img-top" width="100%" height="200" [src]="item.url"/>
+          <div class="card-body">
+            <div class="card-text">
+              <strong>{{item.title}}</strong>
+            </div>
+            <p class="card-text">{{item.description}}</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <br>
+  <div class="d-md-flex">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+  </div>
+</div>

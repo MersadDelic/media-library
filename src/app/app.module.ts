@@ -1,0 +1,35 @@
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+
+import {AppComponent} from './app.component';
+import {NavComponent} from './nav/nav.component';
+import {DashboardComponent} from './dashboard/dashboard.component';
+import {FooterComponent} from './footer/footer.component';
+import {SidebarComponent} from './dashboard/sidebar/sidebar.component';
+import {ItemListComponent} from './dashboard/item-list/item-list.component';
+import {FormsModule} from "@angular/forms";
+import {ItemFilterByTitlePipe} from "./dashboard/pipes/item-filter-by-title";
+import {ItemFilterByDescriptionPipe} from "./dashboard/pipes/item-filter-by-description";
+import {NgxPaginationModule} from "ngx-pagination";
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    NavComponent,
+    DashboardComponent,
+    FooterComponent,
+    SidebarComponent,
+    ItemListComponent,
+    ItemFilterByTitlePipe,
+    ItemFilterByDescriptionPipe
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    NgxPaginationModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {
+}
