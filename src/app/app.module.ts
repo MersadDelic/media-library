@@ -2,14 +2,14 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
-import {NavComponent} from './nav/nav.component';
-import {DashboardComponent} from './dashboard/dashboard.component';
-import {FooterComponent} from './footer/footer.component';
-import {SidebarComponent} from './dashboard/sidebar/sidebar.component';
-import {ItemListComponent} from './dashboard/item-list/item-list.component';
+import {NavComponent} from './components/nav/nav.component';
+import {DashboardComponent} from './components/dashboard/dashboard.component';
+import {FooterComponent} from './components/footer/footer.component';
+import {SidebarComponent} from './components/dashboard/sidebar/sidebar.component';
+import {ItemListComponent} from './components/dashboard/item-list/item-list.component';
 import {FormsModule} from "@angular/forms";
-import {ItemFilterByTitlePipe} from "./dashboard/pipes/item-filter-by-title";
-import {ItemFilterByDescriptionPipe} from "./dashboard/pipes/item-filter-by-description";
+import {ItemFilterByTitlePipe} from "./components/dashboard/pipes/item-filter-by-title";
+import {ItemFilterByDescriptionPipe} from "./components/dashboard/pipes/item-filter-by-description";
 import {NgxPaginationModule} from "ngx-pagination";
 
 @NgModule({
