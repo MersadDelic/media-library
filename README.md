@@ -2,25 +2,30 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
 
-## Development server
+## Ensure you have node installed
+
+At a command prompt, type node -v to ensure you have version 14.15.0 or higher before proceeding.
+
+## Get a project
+
+Download or clone the code from this repository.
+If you download as a zip file, be sure to unzip it.
+
+Navigate to the media-library folder.
+There should be a package.json file in this folder.
+
+## Install
+
+In a command window (or the Command prompt in Code Editor), type `npm install`.
+This creates a node_modules folder and installs all packages from the package.json file into that folder.
+
+## Run application
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
 
