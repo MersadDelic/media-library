@@ -101,14 +101,17 @@ header h1{
 */
 
 
+
 header {
-  background-color: #5e7b98;
+  background-color: #2f79c3;
   color: white;
   display: flex;
   font-size: 20px;
   height: 80px;
+}
 
-
+.fa-home, .fa-image, .fa-cog, .fa-chart-pie {
+  color: #3d8cdb;
 }
 
 body {
@@ -120,8 +123,6 @@ body {
 .nav-list .list-item {
   display: inline-block;
   padding: 10px 10px;
-
-
 }
 
 .list-item span {
@@ -135,9 +136,10 @@ body {
 }
 
 nav {
+  padding-top: 20px;
   float: left;
   width: 15%;
-  background: #ccc;
+  background: rgba(181, 208, 231, 0.5);
   height: 100%;
 }
 
@@ -149,9 +151,7 @@ nav ul {
 
 
 .sidebar ul li {
-  padding: 15px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  border-top: 1px solid rgba(225, 225, 225, 0.2);
+  padding: 20px;
 }
 
 .sidebar ul li a {
@@ -166,13 +166,13 @@ nav ul {
 }
 
 .sidebar ul li:hover {
-  background: #5e7b98;
+  background: rgba(181, 208, 231, 0.7);
+  border-left: 7px solid rgb(83, 150, 208);
+  box-sizing: border-box;
+  padding-left: 13px;
 
 }
 
-.sidebar ul li:hover a {
-  color: white;
-}
 
 article {
   float: left;
@@ -183,32 +183,20 @@ article {
 }
 
 nav {
-  height: 770px !important;
-
-}
-
-
-/* Style the footer */
-footer {
-  background-color: #ffffff;
-  padding: 10px;
-  text-align: center;
-  color: white;
-  width: 85%;
-  float: right;
-}
-
-.flex1 {
-  margin: auto;
-  text-align: center;
+  height: 1000px !important;
 }
 
 .col-md-2 {
-  height: 250px;
+  height: 280px;
+  width: 225px;
+}
+
+.card-img-top {
+  height: 170px;
 }
 
 nav {
-  height: 224px !important;
+  height: 860px !important;
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
@@ -219,7 +207,7 @@ nav {
 }
 
 @media (min-width: 600px) and (max-width: 1133px) {
-  nav ul li a .fa-home, .fa-cog, .fa-image, .fa-list-ol {
+  nav ul li a .fa-home, .fa-cog, .fa-image, .fa-chart-pie {
     display: none;
   }
 }
@@ -242,24 +230,8 @@ nav {
     font-size: 10px;
   }
 
-  .text-center {
-    height: 250px;
-  }
-
-  .card-img-top {
-    height: 180px;
-  }
-
-  .col-md-2 {
-    height: 280px;
-  }
-
-  .card-title, .text-muted {
-    font-size: 14px;
-  }
-
-  footer ul, footer p {
-    margin-left: -50px;
+  nav {
+    height: 275px !important;
   }
 
 }
@@ -289,26 +261,12 @@ nav {
     font-size: 14px;
   }
 
-  .text-center {
-    height: 330px;
-  }
-
-  .card-img-top {
-    height: 260px;
-  }
-
   .col-md-2 {
-    height: 350px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
   }
-
-  .card-title, .text-muted {
-    font-size: 16px;
-  }
-
-  footer ul, footer p {
-    margin-left: -60px;
-  }
-
 }
 
 
