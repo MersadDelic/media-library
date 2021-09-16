@@ -136,11 +136,10 @@ body {
 }
 
 nav {
-  padding-top: 20px;
+
   float: left;
   width: 15%;
   background: rgba(181, 208, 231, 0.5);
-  height: 100%;
 }
 
 nav ul {
@@ -150,22 +149,22 @@ nav ul {
 }
 
 
-.sidebar ul li {
+nav ul li {
   padding: 20px;
 }
 
-.sidebar ul li a {
+nav ul li a {
   color: black;
   display: block;
   text-decoration: none;
 }
 
-.sidebar ul li a .fas {
+nav ul li a .fas {
   width: 35px;
 
 }
 
-.sidebar ul li:hover {
+nav ul li:hover {
   background: rgba(181, 208, 231, 0.7);
   border-left: 7px solid rgb(83, 150, 208);
   box-sizing: border-box;
@@ -182,13 +181,11 @@ article {
 
 }
 
-nav {
-  height: 1000px !important;
-}
 
 .col-md-2 {
   height: 280px;
   width: 225px;
+  margin: auto;
 }
 
 .card-img-top {
@@ -199,18 +196,42 @@ nav {
   height: 860px !important;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
   }
+
+  section nav {
+    height: 260px !important;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 1133px) {
-  nav ul li a .fa-home, .fa-cog, .fa-image, .fa-chart-pie {
-    display: none;
+  nav, article {
+    width: 100%;
+  }
+
+  section nav {
+    height: 260px !important;
   }
 }
+
+@media (min-width: 1133px) and (max-width: 1200px) {
+  section nav {
+    width: 15%;
+    height: 800px !important;
+  }
+
+  article {
+    width: 85%;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+}
+
 
 @media (max-width: 320px) {
   .heading {
@@ -258,7 +279,7 @@ nav {
   }
 
   input[placeholder] {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .col-md-2 {
@@ -267,9 +288,7 @@ nav {
     justify-content: center;
     justify-items: center;
   }
-}
 
-@media ( min-width: 380px ) {
   .col-md-2 {
     height: 270px;
     width: 180px;
@@ -294,3 +313,30 @@ nav {
 }
 
 
+@media ( max-width: 376px ) {
+  .col-md-2 {
+    height: 290px;
+    max-width: 280px;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+
+  .text-center {
+    max-width: 280px;
+  }
+
+  .card-title, .text-muted {
+    font-size: 11px;
+
+  }
+
+  nav {
+    height: 277px !important;
+  }
+
+  nav {
+    width: 100%;
+  }
+}
