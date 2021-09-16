@@ -1,5 +1,315 @@
-/* You can add global styles to this file, and also import other style files */
-.d-md-flex {
-  display: flex;
-  justify-content: center;
+/*
+!* You can add global styles to this file, and also import other style files *!
+
+
+
+.card-body {
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
 }
+.card {
+  margin: 5px 5px;
+}
+.card-title {
+  font-size: x-small;
+}
+.text-muted{
+  font-size: x-small;
+}
+.col-md-2 {
+  min-width: 150px !important;
+  max-width: 290px;
+
+}
+.card-img-top{
+  height: 120px;
+}
+.flex {
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+}
+
+.flex1{
+  margin: auto;
+}
+
+@media screen and (max-width: 380px) {
+.text-center {
+  display: flex;
+}
+  .card-img-top{
+    height: 200px;
+  }
+.flex1{
+  font-size: x-small;
+}
+
+footer p .text-muted{
+  display: none;
+}
+
+  }
+
+@media screen and (min-width: 768px) {
+
+  .card-img-top{
+    display: flex;
+  }
+  .col-md-2{
+    width: 150px;
+    padding: 0;
+
+  }
+.mb-md-0{
+  display: flex;
+
+}
+
+header h1{
+  font-size: 14px !important;
+}
+
+
+}
+@media screen and (max-width: 320px) {
+
+  .card-img-top{
+    display: flex;
+
+  }
+.col-md-2{
+  width: 250px;
+}
+  .mb-md-0 {
+    display: flex;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 768px) {
+  .text-end{
+    display: inline-block;
+    position: absolute;
+    left: 18%;
+    top: 450px;
+
+  }
+
+  .text-end button{
+    font-size: 14px;
+  }
+}
+*/
+
+
+header {
+  background-color: #5e7b98;
+  color: white;
+  display: flex;
+  font-size: 20px;
+  height: 80px;
+
+
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: 10px 10px;
+
+
+}
+
+.list-item span {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.heading {
+  margin-left: 25px;
+
+}
+
+nav {
+  float: left;
+  width: 15%;
+  background: #ccc;
+  height: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+
+.sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(225, 225, 225, 0.2);
+}
+
+.sidebar ul li a {
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar ul li a .fas {
+  width: 35px;
+
+}
+
+.sidebar ul li:hover {
+  background: #5e7b98;
+
+}
+
+.sidebar ul li:hover a {
+  color: white;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 85%;
+  background-color: #ffffff;
+
+}
+
+nav {
+  height: 770px !important;
+
+}
+
+
+/* Style the footer */
+footer {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  width: 85%;
+  float: right;
+}
+
+.flex1 {
+  margin: auto;
+  text-align: center;
+}
+
+.col-md-2 {
+  height: 250px;
+}
+
+nav {
+  height: 224px !important;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1133px) {
+  nav ul li a .fa-home, .fa-cog, .fa-image, .fa-list-ol {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .heading {
+    font-size: 16px !important;
+    display: flex;
+    margin-left: 77px;
+  }
+
+  .navbar .nav-list {
+    font-size: 16px !important;
+    display: flex;
+    margin-left: 25px;
+  }
+
+
+  input[placeholder] {
+    font-size: 10px;
+  }
+
+  .text-center {
+    height: 250px;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+
+  .col-md-2 {
+    height: 280px;
+  }
+
+  .card-title, .text-muted {
+    font-size: 14px;
+  }
+
+  footer ul, footer p {
+    margin-left: -50px;
+  }
+
+}
+
+@media (min-width: 460px) and (max-width: 320px) {
+  .heading {
+    font-size: 16px !important;
+    display: block;
+    margin-left: 150px;
+  }
+
+  .navbar .nav-list {
+    font-size: 16px !important;
+    display: block;
+    margin-left: 100px;
+  }
+
+
+  nav {
+    height: 224px !important;
+    text-align: center;
+    margin: auto;
+
+  }
+
+  input[placeholder] {
+    font-size: 14px;
+  }
+
+  .text-center {
+    height: 330px;
+  }
+
+  .card-img-top {
+    height: 260px;
+  }
+
+  .col-md-2 {
+    height: 350px;
+  }
+
+  .card-title, .text-muted {
+    font-size: 16px;
+  }
+
+  footer ul, footer p {
+    margin-left: -60px;
+  }
+
+}
+
+
+

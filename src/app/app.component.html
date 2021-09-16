@@ -1,20 +1,30 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <app-nav></app-nav>
-    </div>
+<header class="navbar">
+  <div class="heading">
+    <h5><i class="fab fa-medium"></i> Media Library </h5>
   </div>
+  <ul class="nav-list">
+    <li class="list-item"><i class="far fa-bell" style="color: white"></i></li>
+    <li class="list-item"><i class="fas fa-cog"></i></li>
+    <li class="list-item"><i class="fas fa-user"></i> <span> Mersad Delic</span></li>
+  </ul>
+</header>
 
-  <div class="row">
-    <div class="col">
-      <app-dashboard></app-dashboard>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col">
-      <app-footer></app-footer>
-    </div>
-  </div>
+<section>
 
-</div>
+  <nav class="sidebar">
+    <app-sidebar></app-sidebar>
+  </nav>
+
+  <article>
+    <app-item-list></app-item-list>
+  </article>
+
+  <footer>
+    <app-footer></app-footer>
+  </footer>
+
+</section>
+
+
+
