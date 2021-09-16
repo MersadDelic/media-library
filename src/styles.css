@@ -269,5 +269,28 @@ nav {
   }
 }
 
+@media ( min-width: 380px ) {
+  .col-md-2 {
+    height: 270px;
+    width: 180px;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+
+  .text-center {
+    width: 160px;
+  }
+
+  .card-title, .text-muted {
+    font-size: 13px;
+
+  }
+
+  nav {
+    height: 277px !important;
+  }
+}
 
 
