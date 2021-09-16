@@ -264,17 +264,17 @@ nav {
 
 }
 
-@media (min-width: 460px) and (max-width: 320px) {
+@media ( min-width: 320px ) and (max-width: 460px) {
   .heading {
     font-size: 16px !important;
     display: block;
-    margin-left: 150px;
+    margin-left: 120px;
   }
 
   .navbar .nav-list {
     font-size: 16px !important;
     display: block;
-    margin-left: 100px;
+    margin-left: 70px;
   }
 
 
