@@ -189,9 +189,7 @@ article {
 .col-md-2 {
   height: 280px;
   width: 225px;
-  margin: auto;
 }
-
 .card-img-top {
   height: 170px;
 }
@@ -209,6 +207,11 @@ nav {
   section nav {
     height: 260px !important;
   }
+
+  .col-md-2 {
+    margin: auto !important;
+  }
+
 }
 
 @media (min-width: 600px) and (max-width: 1133px) {
@@ -216,12 +219,16 @@ nav {
     width: 100%;
   }
 
+  .col-md-2 {
+    margin: auto;
+  }
+
   section nav {
     height: 260px !important;
   }
 }
 
-@media (min-width: 1133px) and (max-width: 1200px) {
+@media (min-width: 1133px) and (max-width: 1920px) {
   section nav {
     width: 15%;
     height: 800px !important;
@@ -233,6 +240,10 @@ nav {
 
   nav ul li a {
     font-size: 14px;
+  }
+
+  section nav {
+    height: 1000px !important;
   }
 }
 
@@ -276,10 +287,17 @@ nav {
 
 
   nav {
-    height: 224px !important;
+    height: 277px !important;
     text-align: center;
     margin: auto;
 
+
+  }
+
+  nav ul li {
+    justify-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
   }
 
   input[placeholder] {
@@ -287,10 +305,7 @@ nav {
   }
 
   .col-md-2 {
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
+    margin: auto;
   }
 
   .col-md-2 {
@@ -310,10 +325,6 @@ nav {
     font-size: 13px;
 
   }
-
-  nav {
-    height: 277px !important;
-  }
 }
 
 
@@ -321,6 +332,7 @@ nav {
   .col-md-2 {
     height: 290px;
     max-width: 280px;
+    margin: auto;
   }
 
   .card-img-top {
